@@ -84,3 +84,74 @@ h2 {
     text-decoration: none;
     color: inherit;
 }
+
+/* Enhanced header with gradient and padding */
+header {
+    background: linear-gradient(135deg, #333, #555);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved font styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+/* Responsive grid adjustments */
+.software-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Enhanced buttons */
+.software-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.software-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    header {
+        padding: 15px 0;
+        text-align: center;
+    }
+    
+    .software-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .software-item {
+        padding: 20px;
+    }
+    
+    .theme-toggle-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
