@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+}
+
+.software-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.software-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 150px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.software-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.software-item p {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.software-item:hover {
+    transform: translateY(-10px);
+}
+
+.software-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Enhanced header with gradient and padding */
+header {
+    background: linear-gradient(135deg, #333, #555);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved font styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+/* Responsive grid adjustments */
+.software-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Enhanced buttons */
+.software-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.software-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    header {
+        padding: 15px 0;
+        text-align: center;
+    }
+    
+    .software-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .software-item {
+        padding: 20px;
+    }
+    
+    .theme-toggle-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Language switcher */
+.language-switcher {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.language-switcher a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.language-switcher a:hover {
+    background-color: white;
+    color: #333;
+}
