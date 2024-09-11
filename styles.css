@@ -175,3 +175,11 @@ footer {
     background-color: white;
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .language-switcher {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
