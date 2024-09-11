@@ -155,3 +155,23 @@ footer {
         font-size: 14px;
     }
 }
+
+/* Language switcher */
+.language-switcher {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.language-switcher a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.language-switcher a:hover {
+    background-color: white;
+    color: #333;
+}
