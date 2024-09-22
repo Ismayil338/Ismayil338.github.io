@@ -1,0 +1,27 @@
+.software-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.software-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.software-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.software-item p {
+    margin: 0;
+    font-size: 1em;
+}
