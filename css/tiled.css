@@ -1,0 +1,29 @@
+.software-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.software-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.software-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.software-item p {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.software-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
