@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приложения для Windows</title>
     <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/tiled.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -21,7 +23,12 @@
     </header>
 	
 	<h1>Приложения для Windows</h1>
-    
+	
+	<div class="view-toggle">
+        <button id="tiledViewBtn" title="Tiled View"><i class="fas fa-th"></i></button>
+        <button id="detailedViewBtn" title="Detailed View"><i class="fas fa-list"></i></button>
+	</div>
+	
     <h2>Свободное ПО, последняя версия отсутствует в Winget</h2>
     <div class="software-grid">
         <div class="software-item">
@@ -235,5 +242,6 @@
             </a>
         </div>
     </div>
+<script src="js/script.js"></script>
 </body>
 </html>
