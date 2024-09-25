@@ -47,6 +47,15 @@ h2 {
     margin: 20px 0 0 0;
 }
 
+.software-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
 .software-item {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -58,6 +67,27 @@ h2 {
     text-align: center;
     text-decoration: none;
     color: black;
+}
+
+.software-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.software-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.software-item p {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.software-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 footer {
@@ -119,6 +149,38 @@ footer {
         margin-top: 10px;
         text-align: center;
     }
+}
+
+.list-view {
+    display: block;
+}
+
+.list-view .software-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.list-view .software-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-view .software-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.list-view .software-item p {
+    margin: 0;
+    font-size: 1em;
 }
 
 .view-toggle {
