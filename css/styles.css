@@ -183,6 +183,11 @@ footer {
     font-size: 1em;
 }
 
+.list-view .software-item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
 .view-toggle {
     position: absolute;
     right: 20px;
