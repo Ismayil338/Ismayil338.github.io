@@ -43,17 +43,20 @@ function setDetailedView() {
     });
 }
 
+// Detect current language from URL path
+const isRussian = window.location.pathname.includes('/ru/');
+
 // Store data in JSON file
 const currentPage = window.location.pathname
   .split("/")
   .pop()
   .replace(".html", "");
 
-fetch('../../js/data.json')
+fetch('../../../js/data.json') // adjust as needed
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('software-list');
-    if (!container) return; // Avoids errors if container is missing on some pages
+    if (!container) return;
 
     data
       .filter(item => item.pages.includes(currentPage))
@@ -62,8 +65,7 @@ fetch('../../js/data.json')
           <div class="software-item">
             <a href="${item.link}">
               <img src="${item.image}">
-              <p>${item.title}</p>
-              <p class="title-ru">${item['title-ru']}</p>
+              <p>${isRussian ? item['title-ru'] : item.title}</p>
             </a>
           </div>
         `;
